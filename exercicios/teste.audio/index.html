@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de audio:</title>
+</head>
+<body>
+    <h1>adicionando audio padrão:</h1>
+
+<audio src="audios/whats audio.mpeg" controls autoplay></audio>
+
+<p>essa é a forma de adicionar audio basicamente</p>
+
+    <h1>agora audio com source src:</h1>
+
+<audio preload="metadata" controls> 
+
+    <source src="audios/whats audio.mpeg" type="audio/mpeg">
+
+    <source src="audios/whats audio.mpeg" type="audio/ogg">
+
+    <source src="audios/whats audio.mpeg" type="audio/wav">
+
+</audio>
+
+</body>
+</html>

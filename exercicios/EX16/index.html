@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADEQUAÇÕES</title>
+</head>
+<body>
+
+    <h1>teste de imagens dinamicas </h1>
+
+<picture>
+    <source media="(max-width: 750px)" srcset="imagens/foto-.png" type="image/png">
+
+    <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+
+    <img src="imagens/foto-g.png" alt="imagem flexivel">
+</picture>
+
+<p>imagens dinamicas, que serve para facilitar para quem esta usando seja um celular, pc, ou tv</p>
+<p>uma das questões é eliminar as barras laterais</p>
+
+<p>usando a tag picture, source media type e img
+
+<p>primeiro se deve abrir a tag picture</p>
+
+<p>img, e colocar a maior imagem no site</p>
+
+<p>anteriormente, vc deve colocar a tag source, muda para max-width: e colocar o tamanho da maior imagem, no caso é 1000px + 50px de folga</p>
+
+<p>em srcset, vc deve escrever exatamente como esta o nome do arquivo da imagem da segunda imagem grande q vc estiver (pode olhar no canto superior esquerdo)</p>
+
+<p>e em type colocar image/png que nesse caso é o formato da imagem</p>
+
+<p>e vai criando outros source necessarios assim sucessivamente, adicionando em max-width: sempre o tamanho da imagem anterior com + 50px</p>
+
+<p>nesse caso, se fosse criar outro, seria abrir a tag source, max-width 350px e em scrset adiciona exatamente o nome da imagem e coloca em type image:png no final.</p>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>audio</title>
+</head>
+<body>
+    
+    <h1>adicionando audio...</h1>
+
+<p>para adicionar audios, é importante ter um cuidado com os direitos, assim como vale para imagens:</p> 
+
+<ul>
+
+    <li>precisa ter em mente que nem todo navegador tem a compatibilidade</li>
+
+    <li>para ter uma compatibilidade maior, é necessario sabe mudar os formatos dos audios para MP3, WAV,OGG</li>
+
+    <li>usando a propria tag audio</li>
+
+</ul>
+
+<audio src="audio/whats audio.mpeg" controls autoplay></audio>
+
+<audio preload="auto" autoplay controls loop>
+
+<source src="audio/whats audio.mpeg" type="audio/mpeg">
+<source src="audio/whats audio.mpeg" type="audio/ogg">
+<source src="audio/whats audio.mpeg" type="audio/wav">
+
+<p>é possivel criar uma ordem cronologica assim como tem nas imagens grande que é o seguinte</p>
+
+<p>depois que abrir a tag ~~audio preload~~ =auto (por exemplo) coloque autoplay controls + (loop se preferir) </p>
+
+
+</audio> 
+
+<p>dentro de audio ainda é possivel adicionar alguns comandos</p>
+
+<ul>
+
+    <li>preload, dentro dele tem os seguintes comandos</li>
+
+    <li>auto , so vai considerar que o audio carregou, depois de carregar todo o site</li>
+
+    <li>metadata , so ira carregar algumas inf como data, duração</li>
+
+    <li>none , não ira carregar nada, apenas quando o usuario apertar play</li>
+
+    <li>loop , para o audio fica recomeçando ao chegar no final</li>
+
+    <li>NAO USA WAV POR CONTA DO ENORME TAMANHO</li>
+
+</ul>
+
+<p>logo em baixar estara os seguintes source src com os audios de diferentes formatos, é importante vc colocar em uma ordem correta, pois assim o navegador do usuario ira tentar carregar na ordem que vc colocou, e por acaso não conseguir, vc colocar o audio para downlaod usando a tag a href</p>
+
+
+</body>
+</html>

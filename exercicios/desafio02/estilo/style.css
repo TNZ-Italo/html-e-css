@@ -1,0 +1,241 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: android;
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=Grenze:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+/*
+
+#472421 marrom
+#261F23  cinza escuro
+#D9C38C marrom claro
+#918B40 dourado
+
+*/
+
+
+* {
+    margin:0px;
+    padding: 0px;
+}
+
+:root {
+    --cor0: #472421;
+    --cor1: #261F23;
+    --cor2: #D9C38C;
+    --cor3: #918B40;
+
+    --fonte-padrao: arial, verdana, helvetica, sans-serif;
+    --fonte-destaque: 'bebas neue', 'cursive';  
+    --fonte-android: 'android', 'cursive';
+}
+
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+
+
+
+
+header {
+    text-align:center;
+    min-height: 20px;
+    padding-top: 8px;
+    padding-bottom: 20px;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(0, 0, 0));
+    }
+
+
+header > h1 {
+    color: rgb(255, 255, 255);
+    font-family: var(--fonte-destaque);
+    margin-bottom: 20px;
+    text-shadow: 3px -2px 5px black;
+    
+}
+
+header > p {
+    font-family: var(--fonte-padrao);
+    font-size: 16px;
+    color: white;
+    max-width: 450px;
+    margin: auto;
+    
+    
+
+}
+
+
+
+nav {
+    background-color:rgb(0, 0, 0);
+    padding: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.408);
+    min-height: 20px;
+    max-height: 0px;
+    padding-top: 0px;
+    
+}
+
+nav > a:hover {background-color: aqua;}
+
+nav > a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bolder;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+    margin: 0px 4px 0px 0px;
+    padding: 0px 0px 0px 0px;
+   
+}
+
+
+
+
+
+main {
+    background-color: white;
+    min-width: 280px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+     }
+
+main h1 {
+    color: var(--cor1);
+    font-family: var(--fonte-android);
+    font-weight: normal;
+}
+
+main h2 {
+    font-family: var(--fonte-android);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, rgb(108, 244, 4), transparent);
+
+}
+
+
+
+main p {
+    margin: 15px;
+    text-align: justify;
+    text-align: 30px;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+main strong {
+    color: blue;
+    font-weight: bolder;
+    background-color: rgba(157, 239, 35, 0.599);
+}
+
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: greenyellow;
+    padding: 3px 4px;
+
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: rgb(6, 56, 222);
+    background-color: rgba(47, 255, 0, 0.79);
+    
+}
+
+div.video {
+    background-color: #4fff7b;
+    margin: 0px -20px 30px -20px;
+    padding: 10px;
+
+    position: relative;
+    padding-bottom: 59.7%;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+
+a {
+    color: rgb(22, 105, 38);
+    
+}
+
+a.externo::after {
+    content: '\00a0\1F517';
+}
+
+aside {
+    background-color: #9effb677;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+aside > ul {
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '\2714\00a0\00a0';
+}
+
+aside h3{
+    background-color: green;
+    color: white;
+    padding:15px;
+    margin: -10px -10px 0px -10px;
+    font-size: 1.6em;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.548);
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 5px;
+}
+
+mark{
+    color: rgb(0, 0, 0);
+    background-color: #4fff7b;
+    border-radius: 2px;
+    padding: 2px;
+    
+}
+
+
+

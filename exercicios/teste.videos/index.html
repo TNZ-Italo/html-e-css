@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meus 4 Vídeos</title>
+
+  <style>
+    /* Reseta margem padrão do navegador */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+
+    /* Título da página */
+    h1 {
+      text-align: center;
+      padding-top: 30px;
+    }
+
+
+    /* AQUI FICA A GRADE DOS VÍDEOS */
+    .grade-videos {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* 2 colunas iguais */
+      gap: 25px; /* Espaço entre os vídeos */
+      padding: 40px; /* ESPAÇO DA BORDA que tu pediu */
+      max-width: 1200px; /* Largura máxima pra não ficar gigante */
+      margin: 0 auto; /* Centraliza a grade na página */
+    }
+    
+    /* Cada vídeo */
+    .video iframe {
+      width: 100%; /* Ocupa 100% da coluna */
+      aspect-ratio: 16 / 9; /* Proporção do YouTube */
+      border: none;
+      border-radius: 12px; /* Bordas arredondadas */
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Sombra leve */
+    }
+
+    /* REGRA PRO CELULAR: vira 1 vídeo por linha */
+    @media (max-width: 768px) {
+      .grade-videos {
+        grid-template-columns: 1fr; /* 1 coluna só */
+        padding: 20px; /* Menos espaço no celular */
+        gap: 20px;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+  <h1>Minha galeria de vídeos</h1>
+
+  <div class="grade-videos">
+    
+    <!-- VÍDEO 1 - Linha de cima, esquerda -->
+    <div class="video">
+      <a href="video1.html">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/oVAgozO2laA"
+            title="Vídeo 1"
+            allowfullscreen>
+          </iframe>
+      </a>
+    </div>
+    
+
+
+
+
+    <!-- VÍDEO 2 - Linha de cima, direita -->
+    <div class="video">
+      <iframe 
+        src="https://www.youtube.com/embed/80L-OnpYCaI?si=TOUh2ONylGL-F57t" title" 
+        title="Vídeo 2"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- VÍDEO 3 - Linha de baixo, esquerda -->
+    <div class="video">
+      <iframe 
+        src="https://www.youtube.com/embed/sQ8Hxw9Ghqc?si=GOklyFwBk04qag7e" title="YouTube video player" 
+        title="Vídeo 3"
+        allowfullscreen>
+      </iframe>
+    </div>
+    
+  </div>
+
+</body>
+</html>

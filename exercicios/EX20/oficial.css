@@ -1,0 +1,13 @@
+ @charset "UTF-8"
+
+
+body {background-color: rgb(240, 240, 240);}
+body {background-color: rgba(186, 221, 31, 0.407);}
+
+h1 {color: rgba(82, 49, 0, 0.551);} 
+
+h2 {background-color: rgba(218, 19, 19, 0.659);}
+
+p {color: rgba(82, 49, 0, 0.551);}
+
+a {background-color: rgba(82, 49, 0, 0.712); color: black;}

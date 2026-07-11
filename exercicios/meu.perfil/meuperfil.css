@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+
+    
+.eu {
+    margin: auto ;
+}
+
+
+
+.perfil {
+    height: 300px ;
+    width: 300px;
+    margin: 50px ;
+    border-radius: 50%;
+    box-shadow: 2px 3px 7px -1px;
+    margin: auto;
+}
+
+
+header {
+    background-color: rgba(47, 47, 83, 0.462);
+    border-radius: 10px;
+
+}
+
+div > ul {
+   
+    margin: 1px 1px 1px 1px;
+}
