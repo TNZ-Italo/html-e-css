@@ -8,7 +8,10 @@
 
 */
 
-
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
 
 body {
@@ -26,13 +29,9 @@ img {
     margin-right: 20px;
 }
 
-ul {
-    color: rgb(25, 86, 66);
-    display: block;
-    background-color: white;
-    width: 140px;
-    border-radius: 10px;
-    
-    
-}
+/* Precisa de 4 divs com background da mesma imagem */
+.shard { transition: transform 0.5s; }
+.container:hover .shard:nth-child(1) { transform: translate(-10px, -10px); }
+.container:hover .shard:nth-child(2) { transform: translate(10px, -10px); }
+/* etc */
 
