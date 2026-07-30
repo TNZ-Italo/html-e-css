@@ -8,16 +8,37 @@ body {
 table {
     width: 500px;
     text-align: center;
+    border-collapse: collapse;
+    position: relative;
+}
+
+caption {
+    background-color: gray;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-weight: bolder;
+}
+
+tbody > tr:nth-child(2n) {
+    background-color: lightgray;
+}
+
+thead > tr > th {
+    background-color: rgb(162, 162, 162);
+    position: sticky;
+    top: -1px;
 }
 
 td, th {
     border: 2px solid black;
     padding: 8px;
-    font-weight: bolder;
+    font-weight: normal;
 }
 
+
 tr.cabeca, tfoot {
-    background-color: gray;
+    background-color: rgb(162, 162, 162);
     color: white;
 }
 
