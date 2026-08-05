@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>criação de tabela sozinho</title>
+
+<style>
+
+  table {
+    height: 10px;
+    width: 450px;
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+  th, tr, td  {
+    height: 30px;
+    width: 250px;
+    border: 2px solid black;
+  }
+
+  td.rank, th, td.num {
+    background-color: gray;
+    
+}
+  
+caption {
+
+    border: 2px solid black;
+    height: 30px;
+    width: 450px;
+    text-transform: uppercase;
+}
+
+</style>
+
+
+
+</head>
+<body>
+    <h1>tabelando...</h1>
+
+    <!--
+    essas são as tags para usar dentro da tabela 
+
+table, 
+
+thead - tbody - tfoot
+
+td, tr, th
+
+
+    -->
+    
+<table>
+
+    <caption>rank de jogos</caption>
+
+  <thead>
+
+        <tr scope="col">
+            <th>RANK</th>
+            <th>JOGO</th>
+            <th>PORC. JOGADORES</th>
+        </tr>
+
+  </thead>
+
+  <tbody>
+ 
+  <tr>
+      <td class="rank">1</td>
+      <td>fifa</td>
+      <td class="num">30%</td>
+  </tr>
+
+  <tr>
+    <td class="rank">2</td>
+    <td>free fire</td>
+    <td class="num">28%</td>
+  </tr>
+
+  <tr>
+    <td class="rank">3</td>
+    <td>rocket</td>
+    <td class="num">26%</td>
+  </tr>
+
+  <tr>
+    <td class="rank">4</td>
+    <td>dead by daylight</td>
+    <td class="num">24%</td>
+  </tr>
+
+  <tr>
+    <td class="rank">5</td>
+    <td>minecraft</td>
+    <td class="num">22%</td>
+  </tr>
+
+  <tr>
+    <td class="rank">6</td>
+    <td>witch blair</td>
+    <td class="num">20%</td>
+  </tr>
+
+  </tbody>
+
+  <tfoot>
+
+  <tr scope="row">
+    <td></td>
+    <td></td>
+    <td>soma: 99%</td>
+  </tr>
+
+  </tfoot>
+
+
+</table>
+
+
+
+</body>
+</html>
