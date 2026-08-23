@@ -6,6 +6,16 @@
     <title>tabela comum</title>
 
 <style>
+
+    tbody > tr:nth-child(2n) {
+        background-color: aqua;
+
+    }
+
+    div#container {
+        width: 70vw;
+    }
+
     table {
         border-collapse: collapse;
         text-align: center;
@@ -25,14 +35,17 @@
         width: 150px;
     }
 
-    .col1 {
-        background-color: yellow;
-    }
+td.a1 {
+    background-color: white;
+    color: black;
+}
 
+img {
+    height: 400px;
+    width: 400px;
+    border-radius: 0px 100px 0px 100px;
+}
 
-    .cgrupo {
-        background-color: red;
-    }
 
 
 </style>
@@ -40,109 +53,121 @@
 </head>
 <body>
     
-    <table>
-
-<caption>  notas e avaliações
-    
-    
-            <colgroup>
-    
-            <col class="col1">
-            <col class="cgrupo" span="2">
-            <col class="col4">
-    
-            </colgroup>
-    
-    
-            <tr class="cinza">
-                <th rowspan="2" >area</th>
-                <th rowspan="2">disciplina</th>
-                <th colspan="2" >notas</th>
-                <th rowspan="2" >media</th>
-            </tr>
-    
-           <tr class="cinza">
-    
-            <td>nota 1</td>
-            <td>nota 2</td>
-    
-           </tr>
-    
-    
-            <tr>
-                <td rowspan="4">exatas</td>
-                <td>matematica</td>
-                <td>0.0</td>
-                <td>0.0</td>
-                <td>0.0</td>
-             </tr>
-    
-    
-             <tr>
-                <td>fisica</td>
-                <td>0.0</td>
-                <td>0.0</td>
-                <td>0.0</td>
-    
-             </tr>
-    
-    
-             <tr>
-                <td>quimica</td>
-                <td>0.0</td>
-                <td>0.0</td>
-                <td>0.0</td>
-    
-             </tr>
-    
-    
-             <tr>
-                <td>biologia</td>
-                <td>0.0</td>
-                <td>0.0</td>
-                <td>0.0</td>
-    
-             </tr>
-    
-    
-            <tr>
-                <th colspan="4" class="cinza">media de exatas</th>
-                <th class="cinza">0</th>
-    
-            </tr>
-    
-    
-              <tr>
-                        <td rowspan="2">humanas</td>
-                        <td>historia</td>
-                        <td>0.0</td>
-                        <td>0.0</td>
-                        <td>0.0</td>
-             </tr>
-    
-            <tr>
-                        <td>geografia</td>
-                        <td>0.0</td>
-                        <td>0.0</td>
-                        <td>0.0</td>
-    
-            </tr>
-    
-    
-             <tr>
-                        <th colspan="4" class="cinza">media de humanas</th>
-                        <td class="cinza">0.0</td>
-    
-            </tr>
-    
-</caption>
+    <div id="container">
+        <table>
+        
+        <caption>  notas e avaliações
+        
+        
+                <tr class="cinza">
+                    <th rowspan="2" >area</th>
+                    <th rowspan="2">disciplina</th>
+                    <th colspan="2" >notas</th>
+                    <th rowspan="2" >media</th>
+                </tr>
+        
+               <tr class="cinza">
+        
+                <td class="a1">nota 1</td>
+                <td class="a1">nota 2</td>
+        
+               </tr>
+        
+        
+                <tr>
+                    <td rowspan="4">exatas</td>
+                    <td>matematica</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                 </tr>
+        
+        
+                 <tr>
+                    <td>fisica</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+        
+                 </tr>
+        
+        
+                 <tr>
+                    <td>quimica</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+        
+                 </tr>
+        
+        
+                 <tr>
+                    <td>biologia</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+        
+                 </tr>
+        
+        
+                <tr>
+                    <th colspan="4" class="cinza">media de exatas</th>
+                    <th class="cinza">0</th>
+        
+                </tr>
+        
+        
+                  <tr>
+        
+                            <td class="a1" rowspan="2">humanas</td>
+                            <td>historia</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                 </tr>
+        
+                <tr>
+                            <td>geografia</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+        
+                </tr>
+        
+        
+                 <tr>
+                            <th colspan="4" class="cinza">media de humanas</th>
+                            <td class="cinza">0</td>
+        
+                </tr>
+        
+        </caption>
+        </table>
+    </div>
 
 
-    </table>
 
-                
+    <h2>
+        teste com imagens e audios...
+    </h2>
 
-              
+    <img src="imagens/jarra.jpg" alt="jarra">
+    
+
+    <audio controls autoplay >
+        <source src="audio/whats audio.mpeg" type="audio/mpeg">
+    </audio>
+
+    <h2>videos incoporados</h2>
+
+    <div class="video">
+
+      <iframe 
+        src="https://youtu.be/kBcQjz7d4WQ?si=WjLc2XND9CjkRofa" 
+        title="Vídeo 1"
+        allowfullscreen>
+      </iframe>
+    </div>
 
 
 </body>
