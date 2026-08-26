@@ -8,10 +8,15 @@
 <style>
     iframe {
         height: 400px;
-        width: 400px;
+        width: 96vw;
         border: 2px groove black;
-        border-radius: 20px 0px 0px 0px;
+        border-radius: 10px 0px 0px 0px;
     }
+
+    p.site {
+        font-size: 30px;
+    }
+
 </style>
 
 
@@ -20,18 +25,29 @@
 
     <h1>testando iframe</h1>
 
-    <p>
-        clique aqui para ser direcionado a 
-        
-        <iframe src="https://tnz-italo.github.io/android/"
-         
-        frameborder="1" 
-        scolling="auto" >
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt similique doloribus consequatur, explicabo consequuntur, aliquam nulla voluptatibus illum soluta dignissimos dolor blanditiis sit voluptatum ex, modi optio rerum facere fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores magni consequatur quo aperiam modi ex facere, corrupti nostrum adipisci ea ut quam culpa itaque laborum, vero pariatur vel eius debitis.</p>
 
-        <a href="https://tnz-italo.github.io/android/" target="_blank">meu site de android</a>
+
+    <p class="site">clique logo abaixo para visualizar meus outros dominios!</p>
+
+    <ul>
+        <li><a href="paginas/index2.html" target="frame">minha primeira pagina</a></li>
+        <li><a href="paginas/index3.html" target="frame">minha segunda pagina</a></li>
+        <li><a href="paginas/index4.html" target="frame">minha terceira pagina</a></li>
+    </ul>
+
+        
+        <iframe name="frame" src="paginas/index2.html"
+         
+        frameborder="0" 
+        scolling="no" >
 
         </iframe>
+        
 
+         <h1>conteudo extra!</h1>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt similique doloribus consequatur, explicabo consequuntur, aliquam nulla voluptatibus illum soluta dignissimos dolor blanditiis sit voluptatum ex, modi optio rerum facere fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores magni consequatur quo aperiam modi ex facere, corrupti nostrum adipisci ea ut quam culpa itaque laborum, vero pariatur vel eius debitis.</p>
 
 </body>
 </html>
