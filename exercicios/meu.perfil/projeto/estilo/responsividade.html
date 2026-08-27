@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de responsividade</title>
+
+<style>
+
+/*COMO COFIGURAR OS TEXTOS:*/
+
+    body {
+        background-color: gray;
+    }
+
+    main {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+
+        /*ÉSSAS COMFIGURAÇOES ACIMA É FUNDAMENTAL PARA TER UMA MELHOR VISÃO DE QUANDO A IMG IRA SE QUEBRA*/
+
+        min-width:280px; 
+        max-width: 800px; /*JA AQUI É O MEIO TERMO, ONDE O TEXTO NÃO FICARA MUITO ESTICADO E O MININO SEMPRE SERA 320px POR CONTA DE CELULARES MAIS ARTIGOS*/
+
+        margin: auto; /*NESSE EXEMPLO É, QUANDO A LARGURA PASSA DE (NESSE EXEMPLO É 800px) IRA COMEÇA A CENTRALIZAR*/
+
+        /*COMO CONFIGURAR A IMG:*/
+
+        img {
+            width: 100%;
+        }   
+
+    }
+</style>
+
+</head>
+<body>
+    <main>
+        <h1>apenas um teste</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore alias delectus molestiae cum explicabo repellat possimus eveniet saepe voluptas dolore, voluptatibus expedita adipisci provident pariatur dignissimos autem earum! Consequatur, quisquam!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore assumenda nam quas nulla hic? Porro beatae, itaque facilis vero, quasi, eum earum magni nisi autem ut aperiam hic voluptas ullam?
+        </p>
+        
+        <picture>
+            <source media="(max-width:500px )" srcset="../imagens/irina-blok-pq.jpg">
+            <img src="../imagens/irina-blok.jpg" alt="irina-blok">
+        </picture>
+
+
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore alias delectus molestiae cum explicabo repellat possimus eveniet saepe voluptas dolore, voluptatibus expedita adipisci provident pariatur dignissimos autem earum! Consequatur, quisquam!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore assumenda nam quas nulla hic? Porro beatae, itaque facilis vero, quasi, eum earum magni nisi autem ut aperiam hic voluptas ullam?
+        </p>
+    </main>
+    
+
+
+
+</body>
+</html>
