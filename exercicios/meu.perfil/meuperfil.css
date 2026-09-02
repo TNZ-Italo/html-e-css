@@ -9,8 +9,9 @@
 */
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 8px;
+    padding: 5px;
+
 }
 
 
@@ -18,8 +19,8 @@ body {
 
     background-image: linear-gradient(to right,#111E41 15%,#0F172A );
     color: white;
-    margin: 20px;
-    padding: 6px;
+    margin: 8px;
+    padding: 2px;
 
 }
     
