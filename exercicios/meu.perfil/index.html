@@ -10,8 +10,26 @@
 
     <link rel="stylesheet" href="meuperfil.css">
 
+    
+
 <style>
     
+    .card {
+        position: relative; overflow: hidden;
+    }
+
+    .texto {
+        position: absolute; bottom: 0;
+        left: 0; right: 0;
+        background: rgba(0,0,0,0,7);color: white;
+        padding: 20px; transform: translateY(100%);
+        transform: 0.8s;
+        
+    }
+
+    .card:hover .texto {
+        transform: translateY(0);
+    }
 
 </style>
 
@@ -25,11 +43,11 @@
 
     <h2>Estudante de Engenharia de Software</h2>
 
-<div class="wrap">
+<div class="card">
 
-    <a href="#"><img  src="tiktok.png" alt="foto"></a>
-
-  
+    <img  src="tiktok.png" alt="foto">
+    <div class="texto"> meu projeto</div>
+ 
 </div>
 
 
