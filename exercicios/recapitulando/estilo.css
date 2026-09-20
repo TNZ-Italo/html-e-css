@@ -15,6 +15,54 @@
     --fonte4: "Black Ops One", system-ui;
 }
 
+
+
+:root {
+    --cor1: black;
+    --cor2: blueviolet;
+    --cor3: chartreuse;
+}
+
 body {
     font-family: var(--fonte4);
+}
+
+/*
+
+tr#tr1 {
+    background-color: aqua;
+    color: var(--cor2);
+}
+
+tr#tr2 {
+    background-color: blue;
+    color: var(--cor3);
+
+}
+
+*/
+
+/*
+
+tbody {
+    tr:nth-child(odd) {
+        background-color: aqua;
+    }
+}
+
+*/
+
+div#container {
+    overflow-y: auto;
+    height: 78vw;
+}
+
+img#i1 {
+    height: 300px;
+    filter: drop-shadow(10px 10px 1px grey);
+}
+
+img#i2  {
+    height: 300px;
+    box-shadow: 10px 10px 1px grey;
 }
