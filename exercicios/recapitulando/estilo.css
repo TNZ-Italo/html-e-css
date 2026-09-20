@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Outline&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single+Ink:wght@100..900&family=Bitcount+Prop+Double+Ink:wght@100..900&family=Black+Ops+One&family=Bungee+Outline&family=Bungee+Tint&family=Monoton&display=swap');
+
+
+
+:root {
+    --fonte1: Arial, Helvetica, sans-serif;
+    --fonte2: "Bungee Outline", sans-serif;
+    --fonte3:  "Bungee Tint", sans-serif;
+    --fonte4: "Black Ops One", system-ui;
+}
+
+body {
+    font-family: var(--fonte4);
+}
