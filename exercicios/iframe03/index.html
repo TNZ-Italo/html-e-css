@@ -15,7 +15,7 @@
 div {
     height: 350px;
     width: 100vw;
-    background: linear-gradient(to bottom, rgb(247, 17, 205) 9%, rgb(247, 40, 205), rgb(247, 70, 205)  20%, transparent);
+    background: linear-gradient(to bottom, rgba(13, 195, 140, 0.564) 50%, transparent);
 }
 
 div:hover {
@@ -34,6 +34,14 @@ form {
 form > p.a2 > input {
     background-color: blue;
     color: white;
+    border-radius: 5px;
+    height: 30px;
+    width: 50px;
+}
+
+form > p.a2 > input:hover {
+    background-color: red;
+     
 }
 
 input {
@@ -53,22 +61,13 @@ input {
 
     <h1>Como cria formulario?</h1>
     
-    <form>
+    <form action="cadastro.php" autocomplete="off">
 
-        <p class="a1">nome: <input type="text" name="nome" id="nome"></p>
-        <p>sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+        <p class="a1"><label for="inome">nome:</label> <input type="text" name="nome" id="inome"></p>
+
+        <p><label for="isobrenome">sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+
         <p class="a2"><input type="submit" value="enviar"></p>
-
-    </form>
-
-    <h1>criando o segundo formulario..</h1>
-
-    <form>
-
-        <p>cargo <input type="text" name="cargo" id="cargo"></p>
-        <p>funcao <input type="text" name="funcao" id="funcao"></p>
-
-        <p class="a2"><input type="submit" value="mandar"></p>
 
     </form>
 
