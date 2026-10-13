@@ -4,20 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formulario</title>
+
+<style>
+
+    body {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .menu {
+        background-color: rgb(74, 208, 103);
+        
+    }
+
+    
+
+
+
+</style>
+
+
 </head>
 <body>
 
+    <div class="menu">
+
     <h1>formulario simples</h1>
 
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" method="post" autocomplete="off">
 
-        <p><label for="inome">NOME:</label> <input type="text" name="nome" id="inome"></p>
+        <p><label for="iusu"> USUARIO: </label> <input type="text" name="usu" id="iusu" required minlength="6" maxlength="30" size="10" placeholder="seu usuario" autocomplete="username"></p>
 
-        <p><label for="isobrenome">SOBRENOME:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p> <label for="isenha">SENHA:</label> <input type="password" name="senha" id="isenha" required minlength="8" maxlength="30" size="10"></p>
 
-        <p><input type="submit" value="enviar"></p>
+        <p class="enviar"><input type="submit" value="enviar">
+        
+        <input type="reset" value="limpar">
+
+        </p>
 
     </form>
+
+    </div>
+
     
 </body>
 </html>
