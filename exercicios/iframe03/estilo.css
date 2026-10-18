@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+ * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+div {
+    height: 99vh;
+    width: 100vw;
+    background: linear-gradient(to bottom, rgba(14, 56, 43, 0.564) 50%, transparent);
+}
+
+div:hover {
+}
+
+form > p > input {
+    background-color: rgb(245, 245, 245);
+    
+}
+
+form {
+    color: rgb(241, 241, 241);
+}
+
+
+form > p.a2 > input {
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+    width: 50px;
+}
+
+form > p.a2 > input:hover {
+    background-color: red;
+     
+}
+
+input {
+    color: rgb(50, 28, 161);
+    background-color: blue;
+}
+
+
