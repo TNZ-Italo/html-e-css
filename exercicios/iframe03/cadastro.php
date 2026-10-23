@@ -1,1 +1,3 @@
 para continuar, vc precisa aprender php...
+
+tambem estude RegEx e pattern 
