@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+
+    <h1>nivel de satisfação com JavaScript</h1>
+
+
+
+
+    <form action="cadastro.php">
+
+        <p>
+            <label for="ivalor">ivalor:</label>
+            <input type="range" name="valor" id="ivalor" min="0" max="10"
+            oninput="ival.innerHTML = Number(ivalor.value)">
+            <output id="ival">5</output>
+        
+        </p>
+
+
+        
+        <p>
+            <input type="reset" value="limpar">
+            <input type="submit" value="enviar">
+        </p>
+
+
+    </form>
+
+
+
+
+</body>
+</html>
