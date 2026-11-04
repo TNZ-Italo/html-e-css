@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de checkbox e radio button</title>
+</head>
+<body>
+
+    <h1>segue as informações a seguir...</h1>
+
+    <form action="cadastro.php">
+
+        <fieldset>
+            <legend>dados pessoais</legend>
+
+            <p><label for="inome">NOME:</label> <input type="text" name="nome" id="inome"></p>
+
+            <p><label for="isobrenome">SOBRENOME:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+
+            <p><label for="icidade">CIDADE:</label> <input type="text" name="cidade" id="icidade"></p>
+
+            <p><label for="ibairro">BAIRRO:</label> <input type="text" name="bairro" id="ibairro"></p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>esportes</legend>
+
+            <p><input type="checkbox" name="futebol" id="ifutebol">Futebol</p>
+
+            <p><input type="checkbox" name="volei" id="ivolei">Volei</p>
+
+            <p><input type="checkbox" name="basquete" id="ibasquete">Basquete</p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Sexo</legend>
+
+            <p>
+                <label for="imasc">MASCULINO</label> <input type="radio" name="sexo" id="imasc" checked>
+            </p>
+
+            <p>
+                <label for="ifemi">FEMININO</label> <input type="radio" name="sexo" id="ifemi">
+            </p>
+
+
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+
+
+
+
+    </form>
+
+
+    
+</body>
+</html>
