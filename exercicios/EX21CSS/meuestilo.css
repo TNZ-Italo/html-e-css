@@ -1,4 +1,10 @@
-@charset "UFT-8"
+@charset "UFT-8";
 
-h2 {background-color: blue;}h2 {background-color: rgba(106, 106, 255, 0.327);}
-mark {background-color: rgba(181, 245, 117, 0.429);}
+h2 {
+    background-color: rgb(10, 152, 177);
+}
+
+
+mark {
+    background-color: rgba(255, 242, 0, 0.429);
+}

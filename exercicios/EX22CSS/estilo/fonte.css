@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/* nesse exemplo irei montar cada parte do texto com uma fonte diferente */
+
+.arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cambria {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.georgia {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+

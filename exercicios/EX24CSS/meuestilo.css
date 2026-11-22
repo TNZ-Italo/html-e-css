@@ -6,11 +6,17 @@ body {
     text-align: justify;
 }
 
-h1 {color:  rgb(43, 57, 57);
-    text-align: left;}
+h1 {
+    color:  rgb(43, 57, 57);
+    text-align: left;
+}
 
-h1#principal {text-align: center;}
+#titulo {
+    text-align: center;
+}
 
-.texto {color: rgb(5, 32, 32);}
+.texto {
+    color: rgb(5, 32, 32);
+}
 
 

@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+* {
+    margin:5px;
+    padding: 5px;
+}
+
+body {text-align: justify;}
+
+    h1 {
+        text-align: center;
+    }
