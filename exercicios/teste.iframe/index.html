@@ -1,69 +1,186 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iframe</title>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feliz Aniversário ❤️</title>
 <style>
-    div#container {
-        height: 98vw;
-        width: 99vw;
-        background-color: aqua;
-    }
-
-    iframe {
-        margin: auto;
-        margin-bottom: 50px;
-        height: 300px;
-        width: 500px;
-        display: block;
-    }
-
-    iframe#q1 {
-        border: 1px solid black;
-    }
-
-    iframe#q2 {
-        border: 1px solid red;
-    }
-
-
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+body{background:#1a0033;color:white;text-align:center;overflow-x:hidden}
+.tela{min-height:100vh;display:none;flex-direction:column;justify-content:center;align-items:center;padding:20px}
+.tela.ativa{display:flex}
+h1{font-size:2.6rem;line-height:1.2}
+h1 span{color:#ff2e7e}
+p{font-size:1.15rem;line-height:1.6;max-width:520px;opacity:.9;margin-top:10px}
+.btn{background:linear-gradient(90deg,#ff2e7e,#ff8a00);color:white;border:none;padding:16px 32px;border-radius:50px;font-size:1.2rem;cursor:pointer;margin-top:25px;font-weight:bold;box-shadow:0 10px 25px rgba(255,46,126,.5)}
+.btn:active{transform:scale(.95)}
+.envelope{font-size:120px;cursor:pointer;animation:pulso 1.2s infinite}
+@keyframes pulso{0%,100%{transform:scale(1)}50%{transform:scale(1.1)}}
+.barra{width:90%;max-width:400px;height:12px;background:rgba(255,255,255,.2);border-radius:20px;margin-top:20px;overflow:hidden}
+.progresso{height:100%;width:0%;background:linear-gradient(90deg,#ff2e7e,#ffcc00);transition:.5s}
+.polaroids{display:flex;gap:18px;flex-wrap:wrap;justify-content:center;margin-top:25px}
+.polaroid{background:white;color:#333;padding:12px 12px 35px;border-radius:8px;width:170px;transform:rotate(-3deg);box-shadow:0 10px 25px rgba(0,0,0,.4);cursor:pointer;transition:.3s}
+.polaroid:nth-child(2){transform:rotate(3deg)}
+.polaroid:nth-child(3){transform:rotate(-2deg)}
+.polaroid:hover{transform:rotate(0) scale(1.08)}
+.polaroid img{width:100%;height:180px;object-fit:cover;border-radius:4px}
+.polaroid b{font-size:.9rem}
+.bolo{font-size:110px;cursor:pointer;margin-top:20px}
+.bolo.apagado{filter:grayscale(1);opacity:.6}
+.cartao{background:white;color:#333;padding:25px;border-radius:20px;max-width:480px;width:100%;margin-top:20px;text-align:left}
+.cartao h3{color:#ff2e7e}
+.opcao{display:block;width:100%;background:#f3f3f3;border:2px solid #eee;padding:14px;border-radius:15px;margin-top:10px;cursor:pointer;font-size:1rem;text-align:left}
+.opcao:hover{border-color:#ff2e7e}
+.opcao.certa{background:#d4ffdd;border-color:green}
+.opcao.errada{background:#ffd4d4;border-color:red}
+.motivos{display:flex;gap:15px;flex-wrap:wrap;justify-content:center;margin-top:20px}
+.motivo{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);padding:20px;border-radius:20px;width:150px;cursor:pointer}
+.motivo span{font-size:40px}
+.motivo p{font-size:.95rem}
+.confete{position:fixed;top:-10px;width:10px;height:18px;z-index:99;animation:cair 3s linear forwards}
+@keyframes cair{to{transform:translateY(110vh) rotate(720deg)}}
+.fogos{position:fixed;font-size:40px;animation:explodir 1.5s forwards;z-index:99}
+@keyframes explodir{0%{transform:scale(0);opacity:1}100%{transform:scale(2);opacity:0}}
+input{width:100%;padding:13px;border-radius:15px;border:2px solid #ff2e7e;margin-top:12px;font-size:1rem}
+.pequeno{font-size:.9rem;opacity:.7}
 </style>
-
-
 </head>
 <body>
 
-    <h1>cadastre logo abaixo!</h1>
-
-    <form action="cadastro" method="get">
-
-<p>
-    nome:
-    <input type="text" name="nome" id="nome">
-    <input type="submit" value="enviar">
-</p>
-
-</form>
-
-
-<div id="container">
-    
-    <iframe id="q1" src="https://tnz-italo.github.io/projeto-cordel/" frameborder="1">
-    
-    </iframe>
-    
-    
-    
-    <iframe id="q2" src="https://tnz-italo.github.io/android/" frameborder="1">
-    
-    </iframe>
+<!-- 1 - ENVELOPE -->
+<div class="tela ativa" id="t1">
+  <p class="pequeno">Você tem uma mensagem especial...</p>
+  <h1>Clique no envelope<br><span>pra abrir 💌</span></h1>
+  <div class="envelope" onclick="proximo(2)">✉️</div>
+  <p>feito com muito amor</p>
 </div>
 
+<!-- 2 - BOAS VINDAS -->
+<div class="tela" id="t2">
+  <h1>Feliz Aniversário! 🎂<br><span>Hoje é todo seu!</span></h1>
+  <p>Preparei uma surpresa com 5 fases pra você. Cada fase tem um pedacinho do meu coração.</p>
+  <div class="barra"><div class="progresso" id="barra"></div></div>
+  <p id="textoBarra">Fase 1 de 5</p>
+  <button class="btn" onclick="proximo(3)">Começar a aventura ✨</button>
+</div>
 
+<!-- 3 - FOTOS -->
+<div class="tela" id="t3">
+  <h1>Nossos momentos 📸</h1>
+  <p>Clica em cada foto pra lembrar desse dia</p>
+  <div class="polaroids">
+    <div class="polaroid" onclick="alert('Esse dia foi perfeito! 🥰')"><img src="foto1.jpg"><b>Melhor dia ❤️</b></div>
+    <div class="polaroid" onclick="alert('Olha essa carinha! 😍')"><img src="foto2.jpg"><b>Você linda(o) ✨</b></div>
+    <div class="polaroid" onclick="alert('Quero viver isso de novo! 💖')"><img src="foto3.jpg"><b>Pra sempre nós 💌</b></div>
+  </div>
+  <button class="btn" onclick="proximo(4)">Próxima fase ➡️</button>
+</div>
 
+<!-- 4 - BOLO -->
+<div class="tela" id="t4">
+  <h1>Faça um pedido! 🕯️</h1>
+  <p>Pensa bem forte no seu desejo... e clica no bolo pra apagar a vela!</p>
+  <div class="bolo" id="bolo" onclick="apagar()">🎂🕯️🕯️🕯️</div>
+  <p id="msgBolo"></p>
+  <button class="btn" id="btnBolo" style="display:none" onclick="proximo(5)">Continuar ➡️</button>
+</div>
 
-    
+<!-- 5 - QUIZ -->
+<div class="tela" id="t5">
+  <h1>Quiz do amor 💘</h1>
+  <p>Vamos ver se você me conhece mesmo...</p>
+  <div class="cartao">
+    <h3>Qual é a minha comida favorita?</h3>
+    <button class="opcao" onclick="responder(this,false)">🍕 Pizza</button>
+    <button class="opcao" onclick="responder(this,true)">🍔 Hambúrguer - TROCA AQUI PELA CERTA</button>
+    <button class="opcao" onclick="responder(this,false)">🍣 Sushi</button>
+    <p id="feedbackQuiz"></p>
+  </div>
+</div>
+
+<!-- 6 - MOTIVOS -->
+<div class="tela" id="t6">
+  <h1>3 motivos pra te amar ❤️</h1>
+  <p>Clica em cada coração pra revelar</p>
+  <div class="motivos">
+    <div class="motivo" onclick="revelar(this,'Seu sorriso')"><span>❤️</span><p>Clica pra revelar</p></div>
+    <div class="motivo" onclick="revelar(this,'Seu jeito')"><span>💖</span><p>Clica pra revelar</p></div>
+    <div class="motivo" onclick="revelar(this,'Você ser você')"><span>💘</span><p>Clica pra revelar</p></div>
+  </div>
+  <button class="btn" onclick="proximo(7)">Ver carta final 💌</button>
+</div>
+
+<!-- 7 - FINAL -->
+<div class="tela" id="t7">
+  <h1>Pra você, com amor 💌</h1>
+  <div class="cartao" style="text-align:center">
+    <p style="text-align:left">Hoje é seu aniversário, mas quem ganhou o presente fui eu por ter você na minha vida.</p>
+    <p style="text-align:left;margin-top:10px"><b>Que seu novo ano venha com muita saúde, amor, dinheiro, paz e muitos sonhos realizados. Eu vou estar aqui em todos eles!</b></p>
+    <p style="text-align:left;margin-top:10px">Feliz aniversário, meu amor! Te amo muito! 🥰🎂</p>
+    <input type="text" id="resposta" placeholder="O que você achou da surpresa?">
+    <button class="btn" onclick="finalizar()" style="width:100%">Enviar resposta 💌</button>
+    <p id="finalMsg"></p>
+  </div>
+  <button class="btn" style="background:#6a00ff" onclick="fogos()">Soltar fogos de novo 🎆</button>
+</div>
+
+<script>
+let fase = 1;
+function proximo(n){
+  document.querySelectorAll('.tela').forEach(t=>t.classList.remove('ativa'));
+  document.getElementById('t'+n).classList.add('ativa');
+  window.scrollTo(0,0);
+  if(n>=3 && n<=6){ let p = document.getElementById('barra'); }
+  confete();
+}
+function apagar(){
+  let b = document.getElementById('bolo');
+  b.innerHTML = '🎂';
+  b.classList.add('apagado');
+  document.getElementById('msgBolo').innerHTML = '✨ Seu pedido foi enviado pras estrelas! Vai se realizar! ✨';
+  document.getElementById('btnBolo').style.display = 'block';
+  confete();
+}
+function responder(el, certa){
+  if(certa){
+    el.classList.add('certa');
+    document.getElementById('feedbackQuiz').innerHTML = 'Acertou! Você me conhece mesmo! 🥰';
+    setTimeout(()=>proximo(6),1200);
+  } else {
+    el.classList.add('errada');
+    document.getElementById('feedbackQuiz').innerHTML = 'Ops! Tenta de novo! 😅';
+  }
+  confete();
+}
+function revelar(el, texto){
+  el.querySelector('p').innerHTML = '<b>'+texto+'</b>';
+  el.querySelector('span').innerHTML = '😍';
+  confete();
+}
+function finalizar(){
+  let v = document.getElementById('resposta').value;
+  if(!v.trim()){ alert('Escreve alguma coisinha! 🥺'); return; }
+  document.getElementById('finalMsg').innerHTML = 'Enviado com amor! ❤️';
+  fogos();
+}
+function confete(){
+  let cores=['#ff2e7e','#ffcc00','#00d2ff','#6a00ff','#00ff88','#ff8a00'];
+  for(let i=0;i<70;i++){
+    let c=document.createElement('div'); c.className='confete';
+    c.style.left=Math.random()*100+'vw';
+    c.style.background=cores[Math.floor(Math.random()*cores.length)];
+    document.body.appendChild(c); setTimeout(()=>c.remove(),3200);
+  }
+}
+function fogos(){
+  confete();
+  for(let i=0;i<12;i++){
+    let f=document.createElement('div'); f.className='fogos';
+    f.innerHTML=['🎆','🎇','✨','💥'][Math.floor(Math.random()*4)];
+    f.style.left=Math.random()*90+'vw'; f.style.top=Math.random()*70+'vh';
+    document.body.appendChild(f); setTimeout(()=>f.remove(),1500);
+  }
+}
+</script>
 </body>
 </html>
