@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/* Versão para celular primeiro */
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* precisei remover o body, para retirar a rolagem lateral */
+
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    background: black url(../imagens/back-phone.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.796);
+
+    width: 97%;
+    border-radius: 10px;
+
+    margin: auto;
+    padding: 10px;
+
+    margin-top: 5px;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+#phone {display: block;}
+#tablet {display: none;}
+#print {display: none;}
+#pc {display: none;}
+#tv {display: none;}
